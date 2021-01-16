@@ -1,6 +1,5 @@
 
-const forecast = () => {
-    return {
+const forecast = {
         places : ['Nelson', 'Cwmcarn', 'Ystrad', 'Cardiff', 'Swansea'],
         weather : ['Sun', 'Rain', 'Cloud Cover', 'Hail', 'Snow'],
         days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -19,13 +18,12 @@ const forecast = () => {
             const randIx = Math.floor(Math.random()* this.days.length);
             return this.days[randIx];
         }
-    }
 }
 
-let dayone = forecast();
-console.log(dayone.getRandomPlace())
-console.log(dayone.getRandomWeather())
-console.log(dayone.getRandomDay())
+
+console.log(forecast.getRandomPlace())
+console.log(forecast.getRandomWeather())
+console.log(forecast.getRandomDay())
 
 
 
