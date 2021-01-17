@@ -1,6 +1,6 @@
 
 const forecast = {
-        places : ['Nelson', 'Cwmcarn', 'Ystrad', 'Cardiff', 'Swansea'],
+        places : ['Shefeild', 'York', 'London', 'Cardiff', 'Swansea'],
         weather : ['Sun \u26C5', 'Rain \u2614', 'Cloud Cover \u2601', 'Hail \u25CF', 'Snow \u26C4'],
         days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         
