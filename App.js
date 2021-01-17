@@ -1,7 +1,7 @@
 
 const forecast = {
         places : ['Nelson', 'Cwmcarn', 'Ystrad', 'Cardiff', 'Swansea'],
-        weather : ['Sun', 'Rain', 'Cloud Cover', 'Hail', 'Snow'],
+        weather : ['Sun', 'Rain ', 'Cloud Cover', 'Hail', 'Snow'],
         days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         
         getRandomPlace() {
@@ -17,15 +17,12 @@ const forecast = {
         getRandomDay() {
             const randIx = Math.floor(Math.random()* this.days.length);
             return this.days[randIx];
+        },
+
+        getRandomForcast() {
+            let string = `On ${this.getRandomDay()} there will be ${this.getRandomWeather()} in ${this.getRandomPlace()}.`;
+            return string;
         }
 }
 
-
-console.log(forecast.getRandomPlace())
-console.log(forecast.getRandomWeather())
-console.log(forecast.getRandomDay())
-
-
-
-
-
+console.log(forecast.getRandomForcast());
