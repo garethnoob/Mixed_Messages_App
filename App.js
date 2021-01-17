@@ -1,7 +1,7 @@
 
 const forecast = {
         places : ['Nelson', 'Cwmcarn', 'Ystrad', 'Cardiff', 'Swansea'],
-        weather : ['Sun', 'Rain ', 'Cloud Cover', 'Hail', 'Snow'],
+        weather : ['Sun \u26C5', 'Rain \u2614', 'Cloud Cover \u2601', 'Hail \u25CF', 'Snow \u26C4'],
         days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         
         getRandomPlace() {
