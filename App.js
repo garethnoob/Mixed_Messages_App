@@ -4,19 +4,21 @@ const forecast = {
         weather : ['Sun \u26C5', 'Rain \u2614', 'Cloud Cover \u2601', 'Hail \u25CF', 'Snow \u26C4'],
         days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         
+        randIx(array) {
+            const randIx = Math.floor(Math.random()* array.length);
+            return randIx;
+        },
+        
         getRandomPlace() {
-            const randIx = Math.floor(Math.random()* this.places.length);
-            return this.places[randIx];
+            return this.places[this.randIx(this.places)];
         },
 
         getRandomWeather() {
-            const randIx = Math.floor(Math.random()* this.weather.length);
-            return this.weather[randIx];
+            return this.weather[this.randIx(this.weather)];
         },
 
         getRandomDay() {
-            const randIx = Math.floor(Math.random()* this.days.length);
-            return this.days[randIx];
+            return this.days[this.randIx(this.days)];
         },
 
         getRandomForcast() {
